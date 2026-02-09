@@ -45,7 +45,7 @@ body {
   max-width: 75rem;
 }
 
-.instructions {
+.card-scene__instructions {
   backdrop-filter: blur(0.25rem);
   animation: fadeIn 0.8s ease-out;
   cursor: default;
@@ -56,7 +56,7 @@ body {
   text-align: center;
 }
 
-.instructions__item {
+.card-scene__instruction {
   opacity: 0.8;
   margin: 0.25rem 0;
   color: var(--color-text-accent);
@@ -82,7 +82,7 @@ body {
   height: 100%;
 }
 
-.card.is-flipped .card__inner {
+.card--flipped .card__inner {
   transform: rotateY(180deg);
 }
 

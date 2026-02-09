@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Card - Flip Animation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="card-scene">
+      <div class="instructions">
+        <p class="instructions__item">Click on card to flip</p>
+        <p class="instructions__item">Click on number to change it</p>
+        <p class="instructions__item">Click on label to change text</p>
+      </div>
+
+      <article class="card" aria-label="Game collectible card">
+        <div class="card__inner">
+          <div class="card__face card__face--front">
+            <img
+              src="assets/picture/1.png"
+              alt="Character portrait"
+              class="card__background"
+            />
+            <div class="card__decor">
+              <img
+                src="assets/decor/Decor.svg"
+                alt=""
+                class="card__decor-img"
+              />
+            </div>
+            <div class="card__label" role="status" aria-live="polite">
+              <img
+                src="assets/label/l.png"
+                alt=""
+                class="card__label-part card__label-part--left"
+              />
+              <div class="card__label-center-wrapper">
+                <img
+                  src="assets/label/c.png"
+                  alt=""
+                  class="card__label-part card__label-part--center"
+                />
+                <span class="card__label-text--hidden">LEGENDARY</span>
+                <svg class="card__label-svg" xmlns="http://www.w3.org/2000/svg">
+                  <text
+                    class="card__label-text"
+                    x="50%"
+                    y="50%"
+                    dominant-baseline="middle"
+                    text-anchor="middle"
+                  >
+                    LEGENDARY
+                  </text>
+                </svg>
+              </div>
+              <img
+                src="assets/label/r.png"
+                alt=""
+                class="card__label-part card__label-part--right"
+              />
+            </div>
+            <div class="card__number">
+              <img src="assets/number/top.svg" alt="" class="card__number-bg" />
+              <span class="card__number-text" id="cardNumber">42</span>
+            </div>
+          </div>
+          <div class="card__face card__face--back">
+            <img
+              src="assets/picture/2.png"
+              alt="Card back pattern"
+              class="card__background card__background--back"
+            />
+            <div class="card__decor">
+              <img
+                src="assets/decor/Decor.svg"
+                alt=""
+                class="card__decor-img"
+              />
+            </div>
+            <div class="card__play-container">
+              <button class="card__play-button" aria-label="Play Demo">
+                <img
+                  src="assets/play-btn/Play-button.png"
+                  alt=""
+                  class="card__play-icon"
+                />
+              </button>
+              <div class="card__play-text-wrapper">
+                <span class="card__play-text--hidden">Play Demo</span>
+                <svg
+                  class="card__play-text-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <text
+                    class="card__play-text"
+                    x="50%"
+                    y="50%"
+                    dominant-baseline="middle"
+                    text-anchor="middle"
+                  >
+                    Play Demo
+                  </text>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
